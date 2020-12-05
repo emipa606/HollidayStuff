@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ArtableFurnitureBase" Name="HollidaySculptureBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>150</pathCost>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <Flammability>.5</Flammability>
+      <SellPriceFactor>1.10</SellPriceFactor>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+      </li>
+    </comps>
+    <building>
+      <ai_chillDestination>true</ai_chillDestination>
+      <isInert>true</isInert>
+    </building>
+  </ThingDef>
+  <ThingDef ParentName="HollidaySculptureBase">
+    <defName>HollidayChristmasTree</defName>
+    <label>Rimtree</label>
+    <description>A festive tree of the rim.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Rimtree</texPath>
+      <drawSize>5</drawSize>
+    </graphicData>
+    <fillPercent>0.90</fillPercent>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>20</Mass>
+      <Beauty>200</Beauty>
+      <WorkToBuild>6000</WorkToBuild>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>15</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <size>(1,1)</size>
+    <costList>
+      <WoodLog>100</WoodLog>
+      <Steel>10</Steel>
+    </costList>
+    <designationCategory>Misc</designationCategory>
+    <uiIconPath>Rimtree</uiIconPath>
+  </ThingDef>
+</Defs>

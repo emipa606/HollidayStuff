@@ -1,0 +1,1079 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ApparelBase">
+    <defName>BaseShoe</defName>
+    <label>holliday shoes</label>
+    <description>Nice new shoes!</description>
+    <techLevel>Spacer</techLevel>
+    <useHitPoints>True</useHitPoints>
+    <graphicData>
+      <texPath>BaseShoe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>400</MarketValue>
+      <DeteriorationRate>0</DeteriorationRate>
+      <MaxHitPoints>3400</MaxHitPoints>
+      <Mass>1</Mass>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.1</ArmorRating_Heat>
+      <Insulation_Cold>1</Insulation_Cold>
+      <Insulation_Heat>1</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <tradeability>Sellable</tradeability>
+    <equippedStatOffsets>
+      <MoveSpeed>0.10</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <generateCommonality>0</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>Feet</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>Outlander</li>
+        <li>Spacer</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  <!--============================ Trees ============================-->
+  <ThingDef ParentName="TreeBase" Name="HollidayTreeBase" Abstract="True">
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Nutrition>1.5</Nutrition>
+    </statBases>
+    <description>A holliday tree.</description>
+    <altitudeLayer>Building</altitudeLayer>
+    <selectable>true</selectable>
+    <fillPercent>0.25</fillPercent>
+    <graphicData>
+      <shadowData>
+        <volume>(0.2, 0.35, 0.13)</volume>
+        <offset>(0,0,-0.42)</offset>
+      </shadowData>
+    </graphicData>
+    <passability>PassThroughOnly</passability>
+    <pathCost>130</pathCost>
+    <blockWind>true</blockWind>
+    <ingestible>
+      <foodType>Tree</foodType>
+      <preferability>RawBad</preferability>
+    </ingestible>
+    <plant>
+      <fertilityMin>0.3</fertilityMin>
+      <fertilitySensitivity>0.5</fertilitySensitivity>
+      <soundHarvesting>Harvest_Tree</soundHarvesting>
+      <soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+      <harvestWork>800</harvestWork>
+      <harvestMinGrowth>0.40</harvestMinGrowth>
+      <harvestFailable>false</harvestFailable>
+      <blockAdjacentSow>true</blockAdjacentSow>
+      <visualSizeRange>1.3~2.0</visualSizeRange>
+      <topWindExposure>0.25</topWindExposure>
+      <wildClusterRadius>20</wildClusterRadius>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineOne</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.0001</BorealForest>
+        <AridShrubland>0.0001</AridShrubland>
+        <Desert>0.0001</Desert>
+        <ExtremeDesert>0.0001</ExtremeDesert>
+        <TemperateForest>0.0001</TemperateForest>
+        <TropicalRainforest>0.0001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>Apparel_PsychicShockLance</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineTwo</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.002</Tundra>
+        <BorealForest>0.002</BorealForest>
+        <AridShrubland>0.002</AridShrubland>
+        <Desert>0.002</Desert>
+        <ExtremeDesert>0.002</ExtremeDesert>
+        <TemperateForest>0.002</TemperateForest>
+        <TropicalRainforest>0.002</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>MealLavish</harvestedThingDef>
+      <harvestYield>10</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineThree</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.003</BorealForest>
+        <AridShrubland>0.003</AridShrubland>
+        <Desert>0.003</Desert>
+        <ExtremeDesert>0.003</ExtremeDesert>
+        <TemperateForest>0.003</TemperateForest>
+        <TropicalRainforest>0.003</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>Chocolate</harvestedThingDef>
+      <harvestYield>10</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineFour</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.001</BorealForest>
+        <AridShrubland>0.001</AridShrubland>
+        <Desert>0.001</Desert>
+        <ExtremeDesert>0.001</ExtremeDesert>
+        <TemperateForest>0.001</TemperateForest>
+        <TropicalRainforest>0.001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>MedicineIndustrial</harvestedThingDef>
+      <harvestYield>5</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineFive</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.001</BorealForest>
+        <AridShrubland>0.001</AridShrubland>
+        <Desert>0.001</Desert>
+        <ExtremeDesert>0.001</ExtremeDesert>
+        <TemperateForest>0.001</TemperateForest>
+        <TropicalRainforest>0.001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>MedicineUltratech</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineSix</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.001</BorealForest>
+        <AridShrubland>0.001</AridShrubland>
+        <Desert>0.001</Desert>
+        <ExtremeDesert>0.001</ExtremeDesert>
+        <TemperateForest>0.001</TemperateForest>
+        <TropicalRainforest>0.001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>ComponentIndustrial</harvestedThingDef>
+      <harvestYield>5</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineSeven</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.001</BorealForest>
+        <AridShrubland>0.001</AridShrubland>
+        <Desert>0.001</Desert>
+        <ExtremeDesert>0.001</ExtremeDesert>
+        <TemperateForest>0.001</TemperateForest>
+        <TropicalRainforest>0.001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>Neutroamine</harvestedThingDef>
+      <harvestYield>5</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineEight</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.001</BorealForest>
+        <AridShrubland>0.001</AridShrubland>
+        <Desert>0.001</Desert>
+        <ExtremeDesert>0.001</ExtremeDesert>
+        <TemperateForest>0.001</TemperateForest>
+        <TropicalRainforest>0.001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>Chemfuel</harvestedThingDef>
+      <harvestYield>12</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineNine</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.001</BorealForest>
+        <AridShrubland>0.001</AridShrubland>
+        <Desert>0.001</Desert>
+        <ExtremeDesert>0.001</ExtremeDesert>
+        <TemperateForest>0.001</TemperateForest>
+        <TropicalRainforest>0.001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>Shell_Firefoam</harvestedThingDef>
+      <harvestYield>10</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineTen</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.001</BorealForest>
+        <AridShrubland>0.001</AridShrubland>
+        <Desert>0.001</Desert>
+        <ExtremeDesert>0.001</ExtremeDesert>
+        <TemperateForest>0.001</TemperateForest>
+        <TropicalRainforest>0.001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>Battery</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineEleven</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.001</BorealForest>
+        <AridShrubland>0.001</AridShrubland>
+        <Desert>0.001</Desert>
+        <ExtremeDesert>0.001</ExtremeDesert>
+        <TemperateForest>0.001</TemperateForest>
+        <TropicalRainforest>0.001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>FirefoamPopper</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineTwelve</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.0005</Tundra>
+        <BorealForest>0.0005</BorealForest>
+        <AridShrubland>0.0005</AridShrubland>
+        <Desert>0.0005</Desert>
+        <ExtremeDesert>0.0005</ExtremeDesert>
+        <TemperateForest>0.0005</TemperateForest>
+        <TropicalRainforest>0.0005</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>MoisturePump</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineThirteen</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.0003</Tundra>
+        <BorealForest>0.0003</BorealForest>
+        <AridShrubland>0.0003</AridShrubland>
+        <Desert>0.0003</Desert>
+        <ExtremeDesert>0.0003</ExtremeDesert>
+        <TemperateForest>0.0003</TemperateForest>
+        <TropicalRainforest>0.0003</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>VitalsMonitor</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineFourteen</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.0001</Tundra>
+        <BorealForest>0.0001</BorealForest>
+        <AridShrubland>0.0001</AridShrubland>
+        <Desert>0.0001</Desert>
+        <ExtremeDesert>0.0001</ExtremeDesert>
+        <TemperateForest>0.0001</TemperateForest>
+        <TropicalRainforest>0.0001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>ToolCabinet</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineFifteen</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.0008</BorealForest>
+        <AridShrubland>0.0008</AridShrubland>
+        <Desert>0.0008</Desert>
+        <ExtremeDesert>0.0008</ExtremeDesert>
+        <TemperateForest>0.0008</TemperateForest>
+        <TropicalRainforest>0.0008</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>Apparel_ShieldBelt</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineSixteen</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.001</BorealForest>
+        <AridShrubland>0.001</AridShrubland>
+        <Desert>0.001</Desert>
+        <ExtremeDesert>0.001</ExtremeDesert>
+        <TemperateForest>0.001</TemperateForest>
+        <TropicalRainforest>0.001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>Gold</harvestedThingDef>
+      <harvestYield>10</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineSeventeen</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.001</BorealForest>
+        <AridShrubland>0.001</AridShrubland>
+        <Desert>0.001</Desert>
+        <ExtremeDesert>0.001</ExtremeDesert>
+        <TemperateForest>0.001</TemperateForest>
+        <TropicalRainforest>0.001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>Silver</harvestedThingDef>
+      <harvestYield>100</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineEighteen</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.001</BorealForest>
+        <AridShrubland>0.001</AridShrubland>
+        <Desert>0.001</Desert>
+        <ExtremeDesert>0.001</ExtremeDesert>
+        <TemperateForest>0.001</TemperateForest>
+        <TropicalRainforest>0.001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>Steel</harvestedThingDef>
+      <harvestYield>50</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineNineteen</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.0007</Tundra>
+        <BorealForest>0.0007</BorealForest>
+        <AridShrubland>0.0007</AridShrubland>
+        <Desert>0.0007</Desert>
+        <ExtremeDesert>0.0007</ExtremeDesert>
+        <TemperateForest>0.0007</TemperateForest>
+        <TropicalRainforest>0.0007</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>WoodLog</harvestedThingDef>
+      <harvestYield>200</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineTwenty</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.001</BorealForest>
+        <AridShrubland>0.001</AridShrubland>
+        <Desert>0.001</Desert>
+        <ExtremeDesert>0.001</ExtremeDesert>
+        <TemperateForest>0.001</TemperateForest>
+        <TropicalRainforest>0.001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>Plasteel</harvestedThingDef>
+      <harvestYield>10</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineTwentyone</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.001</BorealForest>
+        <AridShrubland>0.001</AridShrubland>
+        <Desert>0.001</Desert>
+        <ExtremeDesert>0.001</ExtremeDesert>
+        <TemperateForest>0.001</TemperateForest>
+        <TropicalRainforest>0.001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>MealSurvivalPack</harvestedThingDef>
+      <harvestYield>10</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineTwentytwo</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.001</BorealForest>
+        <AridShrubland>0.001</AridShrubland>
+        <Desert>0.001</Desert>
+        <ExtremeDesert>0.001</ExtremeDesert>
+        <TemperateForest>0.001</TemperateForest>
+        <TropicalRainforest>0.001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>RawAgave</harvestedThingDef>
+      <harvestYield>50</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineTwentythree</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.001</BorealForest>
+        <AridShrubland>0.001</AridShrubland>
+        <Desert>0.001</Desert>
+        <ExtremeDesert>0.001</ExtremeDesert>
+        <TemperateForest>0.001</TemperateForest>
+        <TropicalRainforest>0.001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>WoolAlpaca</harvestedThingDef>
+      <harvestYield>50</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineTwentyfour</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.001</BorealForest>
+        <AridShrubland>0.001</AridShrubland>
+        <Desert>0.001</Desert>
+        <ExtremeDesert>0.001</ExtremeDesert>
+        <TemperateForest>0.001</TemperateForest>
+        <TropicalRainforest>0.001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>WoolMegasloth</harvestedThingDef>
+      <harvestYield>50</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineTwentyfive</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.001</BorealForest>
+        <AridShrubland>0.001</AridShrubland>
+        <Desert>0.001</Desert>
+        <ExtremeDesert>0.001</ExtremeDesert>
+        <TemperateForest>0.001</TemperateForest>
+        <TropicalRainforest>0.001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>Hyperweave</harvestedThingDef>
+      <harvestYield>25</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineTwentysix</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.001</BorealForest>
+        <AridShrubland>0.001</AridShrubland>
+        <Desert>0.001</Desert>
+        <ExtremeDesert>0.001</ExtremeDesert>
+        <TemperateForest>0.001</TemperateForest>
+        <TropicalRainforest>0.001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>Synthread</harvestedThingDef>
+      <harvestYield>25</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineTwentyseven</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.001</BorealForest>
+        <AridShrubland>0.001</AridShrubland>
+        <Desert>0.001</Desert>
+        <ExtremeDesert>0.001</ExtremeDesert>
+        <TemperateForest>0.001</TemperateForest>
+        <TropicalRainforest>0.001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>Jade</harvestedThingDef>
+      <harvestYield>25</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineTwentyeight</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.001</Tundra>
+        <BorealForest>0.0015</BorealForest>
+        <AridShrubland>0.0015</AridShrubland>
+        <Desert>0.0015</Desert>
+        <ExtremeDesert>0.0015</ExtremeDesert>
+        <TemperateForest>0.0015</TemperateForest>
+        <TropicalRainforest>0.0015</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>Milk</harvestedThingDef>
+      <harvestYield>50</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineTwentynine</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.0001</Tundra>
+        <BorealForest>0.0001</BorealForest>
+        <AridShrubland>0.0001</AridShrubland>
+        <Desert>0.0001</Desert>
+        <ExtremeDesert>0.0001</ExtremeDesert>
+        <TemperateForest>0.0001</TemperateForest>
+        <TropicalRainforest>0.0001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>EggChickenFertilized</harvestedThingDef>
+      <harvestYield>20</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineThirty</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.00001</Tundra>
+        <BorealForest>0.00001</BorealForest>
+        <AridShrubland>0.00001</AridShrubland>
+        <Desert>0.00001</Desert>
+        <ExtremeDesert>0.00001</ExtremeDesert>
+        <TemperateForest>0.00001</TemperateForest>
+        <TropicalRainforest>0.00001</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>Joywire</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+  <ThingDef ParentName="HollidayTreeBase">
+    <defName>HollidayPineThirtyone</defName>
+    <label>holliday pine tree</label>
+    <description>A large festive conifer.</description>
+    <graphicData>
+      <texPath>HollidayTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.15)</volume>
+        <offset>(0,0,-0.38)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <wildBiomes>
+        <Tundra>0.0005</Tundra>
+        <BorealForest>0.0005</BorealForest>
+        <AridShrubland>0.0005</AridShrubland>
+        <Desert>0.0005</Desert>
+        <ExtremeDesert>0.0005</ExtremeDesert>
+        <TemperateForest>0.0005</TemperateForest>
+        <TropicalRainforest>0.0005</TropicalRainforest>
+      </wildBiomes>
+      <growDays>20</growDays>
+      <harvestWork>700</harvestWork>
+      <harvestedThingDef>BaseShoe</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+      <harvestTag>Standard</harvestTag>
+    </plant>
+  </ThingDef>
+</Defs>

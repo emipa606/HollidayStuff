@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Abstract="True" Name="HollidayLampBase" ParentName="LampBase">
+    <graphicData>
+      <texPath>Hollidaylight</texPath>
+    </graphicData>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <statBases>
+      <Beauty>2</Beauty>
+      <Mass>1</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>25</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+    </comps>
+    <designationCategory>Misc</designationCategory>
+  </ThingDef>
+  <ThingDef ParentName="HollidayLampBase">
+    <defName>HollidayLight</defName>
+    <label>holliday light</label>
+    <description>A small festive light.</description>
+    <designationHotKey>Misc11</designationHotKey>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="HollidayLampBase">
+    <defName>HollidayLight_Red</defName>
+    <label>red holliday light</label>
+    <description>A small festive red light.</description>
+    <graphicData>
+      <texPath>HollidaylightR</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(217,0,0,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>ColoredLights</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <ThingDef ParentName="HollidayLampBase">
+    <defName>HollidayLight_Green</defName>
+    <label>green holliday light</label>
+    <description>A small festive green light.</description>
+    <graphicData>
+      <texPath>HollidaylightG</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(0,217,0,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>ColoredLights</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <ThingDef ParentName="HollidayLampBase">
+    <defName>HollidayLight_Blue</defName>
+    <label>blue holliday light</label>
+    <description>A small festive blue light.</description>
+    <graphicData>
+      <texPath>HollidaylightB</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(0,0,217,0)</glowColor>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>ColoredLights</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

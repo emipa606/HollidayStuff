@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Holliday Stuff (Continued)</name>
+  <packageId>Mlie.HollidayStuff</packageId>
+  <author>Joseph</author>
+  <url>https://github.com/emipa606/HollidayStuff</url>
+  <supportedVersions>
+    <li>1.1</li>
+    <li>1.2</li>
+  </supportedVersions>
+  <modDependencies />
+  <loadAfter />
+  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+Update of Josephs mod
+https://steamcommunity.com/sharedfiles/filedetails/?id=1220982807
+
+[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+
+[table]
+    [tr]
+        [td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+        [td][url=https://github.com/emipa606/HollidayStuff][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+    [/tr]
+[/table]
+	
+[img]https://i.imgur.com/NOW7jU1.png[/img]
+This mod adds:
+
+A holiday pine tree, that only spawns in the wild. The tree has many variations and drops lots of different random things as gifts when harvested.
+
+A Rimtree - Can be built not planted- beautifull and produces lots of light when powered. Must not be built under a roof.
+
+Holliday lights - small versions of normal lamps. - sepperate graphics, less mats to build, less power to run, very small light radious, slight beauty value.  *requires corrisponding light research*
+
+Holliday shoes - special apparel for the feet, only drops from holliday pines.
+
+More to come!</description>
+</ModMetaData>
