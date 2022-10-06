@@ -26,6 +26,9 @@
     <equippedStatOffsets>
       <MoveSpeed>0.10</MoveSpeed>
     </equippedStatOffsets>
+    <costList>
+      <WoodLog>2</WoodLog>
+    </costList>
     <thingCategories>
       <li>Apparel</li>
     </thingCategories>
