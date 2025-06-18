@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: holliday light -->
+  <HollidayLight.label>holliday light</HollidayLight.label>
+  <!-- EN: A small festive light. -->
+  <HollidayLight.description>A small festive light.</HollidayLight.description>
+  <!-- EN: blue holliday light -->
+  <HollidayLight_Blue.label>blue holliday light</HollidayLight_Blue.label>
+  <!-- EN: A small festive blue light. -->
+  <HollidayLight_Blue.description>A small festive blue light.</HollidayLight_Blue.description>
+  <!-- EN: green holliday light -->
+  <HollidayLight_Green.label>green holliday light</HollidayLight_Green.label>
+  <!-- EN: A small festive green light. -->
+  <HollidayLight_Green.description>A small festive green light.</HollidayLight_Green.description>
+  <!-- EN: red holliday light -->
+  <HollidayLight_Red.label>red holliday light</HollidayLight_Red.label>
+  <!-- EN: A small festive red light. -->
+  <HollidayLight_Red.description>A small festive red light.</HollidayLight_Red.description>
+</LanguageData>

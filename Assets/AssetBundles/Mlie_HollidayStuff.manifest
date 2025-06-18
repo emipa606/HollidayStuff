@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 1378989210
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 66e91233a5e36d2bae022bfb2b372061
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 66e91233a5e36d2bae022bfb2b372061
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.HollidayStuff/Textures/HollidayTree/HollidayTreeE.png
+- Assets/Data/Mlie.HollidayStuff/Textures/HollidaylightB.png
+- Assets/Data/Mlie.HollidayStuff/Textures/Rimtree.png
+- Assets/Data/Mlie.HollidayStuff/Textures/Hollidaylight.png
+- Assets/Data/Mlie.HollidayStuff/Textures/HollidaylightG.png
+- Assets/Data/Mlie.HollidayStuff/Textures/HollidayTree/HollidayTreeM.png
+- Assets/Data/Mlie.HollidayStuff/Textures/HollidayTree/HollidayTreeD.png
+- Assets/Data/Mlie.HollidayStuff/Textures/HollidayTree/HollidayTreeB.png
+- Assets/Data/Mlie.HollidayStuff/Textures/HollidaylightR.png
+- Assets/Data/Mlie.HollidayStuff/Textures/HollidayTree/HollidayTreeI.png
+- Assets/Data/Mlie.HollidayStuff/Textures/HollidayTree/HollidayTreeK.png
+- Assets/Data/Mlie.HollidayStuff/Textures/BaseShoe.png
+- Assets/Data/Mlie.HollidayStuff/Textures/HollidayTree/HollidayTreeH.png
+- Assets/Data/Mlie.HollidayStuff/Textures/HollidayTree/HollidayTreeC.png
+- Assets/Data/Mlie.HollidayStuff/Textures/HollidayTree/HollidayTreeG.png
+- Assets/Data/Mlie.HollidayStuff/Textures/HollidayTree/HollidayTreeL.png
+- Assets/Data/Mlie.HollidayStuff/Textures/HollidayTree/HollidayTreeF.png
+- Assets/Data/Mlie.HollidayStuff/Textures/HollidayTree/HollidayTreeA.png
+- Assets/Data/Mlie.HollidayStuff/Textures/HollidayTree/HollidayTreeJ.png
+Dependencies: []
